@@ -139,7 +139,7 @@ function view_page(dir) {
   // If dir is '/'
   if (dir == '/') {
     // Go to the home page
-    location.href = '/'
+    location.href = '/web-design-collection'
     return
   }
 
