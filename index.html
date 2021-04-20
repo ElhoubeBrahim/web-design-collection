@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/remixicon/remixicon.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+  <title>My Designs</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="brand">
+      <a href="/">
+        <img src="assets/logo.svg" alt="Elwork Designs">
+      </a>
+    </div>
+    <div class="go-back">
+      <a href="/">
+        <i class="ri-arrow-left-s-line"></i>
+        <span>Go back home</span>
+      </a>
+    </div>
+    <div class="navigation" style="display: none;">
+      <div class="prev" onclick="prev()">
+        <i class="ri-arrow-left-s-line"></i>
+      </div>
+      <div class="index">
+        <input type="text" value="1" onkeydown="get_page(event, this.value)" oninput="set_index(this.value)">
+        /
+        <span>50</span>
+      </div>
+      <div class="next" onclick="next()">
+        <i class="ri-arrow-right-s-line"></i>
+      </div>
+    </div>
+    <ul class="links">
+      <li>
+        <a href="http://elwork.me" class="link" style="background-color: #0099e5;">
+          <i class="ri-briefcase-line"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/elhoube.brahim" class="link" style="background-color: #3b5998;">
+          <i class="ri-facebook-line"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ElhoubeBrahim" class="link" style="background-color: #333;">
+          <i class="ri-github-line"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="home-page">
+    <div class="search">
+      <input type="text" placeholder="What are you looking for ?" oninput="get_search_results()"
+        onfocus="this.placeholder = ''" onblur="this.placeholder = 'What are you looking for ?'">
+      <div class="icon">
+        <i class="ri-search-line"></i>
+      </div>
+    </div>
+    <div class="pages"></div>
+  </main>
+
+  <iframe src="" frameborder="0" hidden id="view"></iframe>
+
+  <script src="script.js"></script>
+
+  <iframe hidden onload="init()"></iframe>
+</body>
+
+</html>
