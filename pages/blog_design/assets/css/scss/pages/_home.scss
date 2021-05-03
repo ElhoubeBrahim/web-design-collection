@@ -1,0 +1,162 @@
+/* ======================= Home styles ======================= */
+
+main.home-page {
+
+  .intro {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    background: linear-gradient(-45deg, #fff, lighten($main-color, 10));
+
+    .picture {
+      width: 50%;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .quote {
+      width: 50%;
+      padding: 20px;
+      background-image: url('../images/backgrounds/quote.svg');
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .quotation {
+        margin-inline-start: 10px;
+        user-select: none;
+      }
+
+      blockquote {
+        padding: 10px;
+        padding-inline-start: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      span {
+        display: block;
+        text-align: end;
+      }
+    }
+  }
+
+  .section {
+    padding: 80px 20px;
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+
+  .about {
+    background-color: #eee;
+    padding: 80px;
+
+    p.pragraph {
+      text-align: justify;
+      width: 50%;
+      margin: 0 auto;
+
+      a {
+        color: #0099e5;
+        text-decoration: underline;
+
+        &:hover,
+        &:active {
+          color: darken(#0099e5, 10);
+        }
+      }
+    }
+  }
+
+  .popular-articles,
+  .last-articles {
+
+    &.last-articles {
+      background-color: #eee;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .articles {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .article-v1 {
+        width: 33%;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  main.home-page {
+
+    .about p.pragraph {
+      width: 80%;
+    }
+
+    .popular-articles,
+    .last-articles {
+
+      .articles {
+
+        .article-v1 {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main.home-page {
+
+    .intro {
+      flex-wrap: wrap;
+
+      .picture {
+        width: 100%;
+      }
+
+      .quote {
+        width: 100%;
+      }
+    }
+
+    .about {
+      padding: 50px;
+
+      p.pragraph {
+        width: 100%;
+      }
+    }
+
+    .popular-articles,
+    .last-articles {
+
+      .articles {
+
+        .article-v1 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

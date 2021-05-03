@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Include css files + icons -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+
+  <!-- Define favicon -->
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+
+  <!-- Page title -->
+  <title>My Blog | Articles</title>
+</head>
+
+<body>
+
+  <!-- Start website header -->
+  <header class="website-header">
+    <div class="top-side">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="My Blog" height="50px">
+        </a>
+      </div>
+      <ul class="social-accounts">
+        <li>
+          <a href="https://www.facebook.com/brahim.elhoube" target="_blank">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/BrahimElhoube" target="_blank">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ElhoubeBrahim" target="_blank">
+            <i class="ri-github-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://elwork.me" target="_blank">
+            <i class="ri-briefcase-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav">
+      <ul class="links">
+        <li class="home">
+          <a href="index.html" title="home">
+            <i class="ri-home-7-line"></i>
+          </a>
+        </li>
+        <li class="active">
+          <a href="articles.html" title="articles">
+            <span>Articles</span>
+            <i class="ri-article-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="about.html" title="about">
+            <span>About</span>
+            <i class="ri-information-line"></i>
+          </a>
+        </li>
+
+      </ul>
+      <div class="dropdown">
+        <button class="toggler" onclick="toggle_dropdown(this)">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li>
+            <a href="#">Category 1</a>
+          </li>
+          <li>
+            <a href="#">Category 2</a>
+          </li>
+          <li>
+            <a href="#">Category 3</a>
+          </li>
+          <li>
+            <a href="#">Category 4</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End website header -->
+
+  <!-- Start main wrapper -->
+  <main class="articles-page">
+    <aside class="website-sidebar">
+      <div class="box about">
+        <div class="title">About Blog</div>
+        <div class="paragraph">
+          This project - My Blog - is a simple blog template built with HTML, CSS and the content is rendred by
+          JavaScript.
+        </div>
+      </div>
+      <div class="box popular">
+        <div class="title">Popular articles</div>
+        <ul>
+          <li>
+            <a href="#">How to do something with bla bla?</a>
+          </li>
+          <li>
+            <a href="#">How to do something with bla bla?</a>
+          </li>
+          <li>
+            <a href="#">How to do something with bla bla?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="box categories">
+        <div class="title">Categories</div>
+        <ul>
+          <li>
+            <a href="#">Category 1</a>
+          </li>
+          <li>
+            <a href="#">Category 2</a>
+          </li>
+          <li>
+            <a href="#">Category 3</a>
+          </li>
+          <li>
+            <a href="#">Category 4</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="articles"></div>
+  </main>
+  <!-- End main wrapper -->
+
+  <!-- Start website footer -->
+  <footer class="website-footer">
+    <div class="newsletter">
+      <div class="input">
+        <input type="email" placeholder="example@example.com">
+        <button class="subscribe">Subscribe</button>
+      </div>
+      <div class="info">
+        <i class="ri-information-line"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="My Blog" height="100px">
+        </a>
+      </div>
+      <ul class="social-accounts">
+        <li>
+          <a href="https://www.facebook.com/brahim.elhoube" target="_blank">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/BrahimElhoube" target="_blank">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ElhoubeBrahim" target="_blank">
+            <i class="ri-github-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://elwork.me" target="_blank">
+            <i class="ri-briefcase-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <div class="by">
+        Designed with <span>&#10084;</span> by <a href="http://elwork.me" target="_blank" target="_blank">Brahim Elhoube</a>
+      </div>
+      <div class="year">&copy; 2021</div>
+    </div>
+  </footer>
+  <!-- End website footer -->
+
+  <!-- Include javascript files -->
+  <script src="database/articles.js"></script>
+  <script src="database/users.js"></script>
+  <script src="assets/js/Article.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <iframe src="" frameborder="0" hidden onload="load_articles()"></iframe>
+
+</body>
+
+</html>

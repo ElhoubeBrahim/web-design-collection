@@ -1,0 +1,62 @@
+/* ======================= Sidebar styles ======================= */
+
+aside.website-sidebar {
+  width: 30%;
+  padding: 0 10px;
+
+  .box {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 15px 0;
+    box-shadow: inset 0 0 5px #aaa;
+    padding: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      background-color: lighten($main-color, 20);
+      color: #fff;
+      border-radius: 4px;
+      padding: 5px 10px;
+      margin-bottom: 15px;
+    }
+
+    &.about {
+
+      .paragraph {
+        padding: 0 10px;
+        text-align: justify;
+      }
+    }
+
+    &.popular,
+    &.categories {
+
+      ul {
+        list-style: circle;
+        margin-inline-start: 30px;
+
+        li {
+          margin-bottom: 5px;
+
+          a {
+
+            &:hover,
+            &:active {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  aside.website-sidebar {
+    display: none;
+  }
+}

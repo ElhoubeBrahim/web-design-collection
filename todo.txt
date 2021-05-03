@@ -1,0 +1,12 @@
+1 => Add url indexing design (blabla.com/index.html#3) => Display 3rd page
+2 => Add my fiverr and mostaql accounts
+3 => 
+4 => Improve pages listings
+5 => 
+
+=================================================
+
+(Done) Make the design responsive
+(Done) Improve indexing form
+(Done) Make header fixed
+(Done) Add favicon and logo

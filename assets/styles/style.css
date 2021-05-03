@@ -160,6 +160,16 @@ a {
   cursor: pointer;
 }
 
+iframe {
+  position: fixed;
+  background: #fff;
+  border: none;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 header.page-header {
   padding: 10px 20px;
   display: flex;

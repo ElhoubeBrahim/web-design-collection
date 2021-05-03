@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Include css files + icons -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+
+  <!-- Define favicon -->
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+
+  <!-- Page title -->
+  <title>My Blog | About</title>
+</head>
+
+<body>
+
+  <!-- Start website header -->
+  <header class="website-header">
+    <div class="top-side">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="My Blog" height="50px">
+        </a>
+      </div>
+      <ul class="social-accounts">
+        <li>
+          <a href="https://www.facebook.com/brahim.elhoube" target="_blank">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/BrahimElhoube" target="_blank">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ElhoubeBrahim" target="_blank">
+            <i class="ri-github-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://elwork.me" target="_blank">
+            <i class="ri-briefcase-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav">
+      <ul class="links">
+        <li class="home">
+          <a href="index.html" title="home">
+            <i class="ri-home-7-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="articles.html" title="articles">
+            <span>Articles</span>
+            <i class="ri-article-line"></i>
+          </a>
+        </li>
+        <li class="active">
+          <a href="about.html" title="about">
+            <span>About</span>
+            <i class="ri-information-line"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="toggler" onclick="toggle_dropdown(this)">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li>
+            <a href="#">Category 1</a>
+          </li>
+          <li>
+            <a href="#">Category 2</a>
+          </li>
+          <li>
+            <a href="#">Category 3</a>
+          </li>
+          <li>
+            <a href="#">Category 4</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End website header -->
+
+  <!-- Start main wrapper -->
+  <main class="about-page">
+    <div class="title">About this project</div>
+    <div class="content">
+      <p>
+        This is the first design in <a href="https://elhoubebrahim.github.io/web-design-collection/" target="_blank">My
+          Designs</a>
+        project, which is a collection of pages I used to design, in order
+        to
+        show you some of my work and to get a little bit inspired.
+      </p>
+      <p>
+        This project - My Blog - is a simple blog template built with HTML, CSS and the content is rendred by
+        JavaScript.
+      </p>
+      <p>
+        I hope that you enjoy the project. Don't forget to contact me if you have a question or advice for me. I will
+        appreciate it &#128519;
+      </p>
+    </div>
+    <div class="email-me">
+      <a href="mailto:brahim.elhoube@gmail.com">Send me an email</a>
+    </div>
+  </main>
+  <!-- End main wrapper -->
+
+  <!-- Start website footer -->
+  <footer class="website-footer">
+    <div class="newsletter">
+      <div class="input">
+        <input type="email" placeholder="example@example.com">
+        <button class="subscribe">Subscribe</button>
+      </div>
+      <div class="info">
+        <i class="ri-information-line"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="My Blog" height="100px">
+        </a>
+      </div>
+      <ul class="social-accounts">
+        <li>
+          <a href="https://www.facebook.com/brahim.elhoube" target="_blank">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/BrahimElhoube" target="_blank">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ElhoubeBrahim" target="_blank">
+            <i class="ri-github-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://elwork.me" target="_blank">
+            <i class="ri-briefcase-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <div class="by">
+        Designed with <span>&#10084;</span> by <a href="http://elwork.me" target="_blank" target="_blank">Brahim Elhoube</a>
+      </div>
+      <div class="year">&copy; 2021</div>
+    </div>
+  </footer>
+  <!-- End website footer -->
+
+  <!-- Include javascript files -->
+  <script src="database/articles.js"></script>
+  <script src="database/users.js"></script>
+  <script src="assets/js/Article.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

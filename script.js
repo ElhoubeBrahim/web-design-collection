@@ -1,9 +1,19 @@
 // List of all subfolders in pages folder
-const projects = []
+const projects = ['blog_design']
 
 document.body.onload = () => {
+  init_document()
+}
+
+/**
+ * Init document body
+ */
+function init_document() {
   let marginTop = document.querySelector('header.page-header').clientHeight
+
   document.body.style.paddingTop = marginTop + 'px'
+  document.querySelector('iframe#view').style.top = marginTop + 'px'
+  document.querySelector('iframe#view').style.height = `calc(100% - ${marginTop}px)`
 }
 
 /**
@@ -99,7 +109,7 @@ function get_project_html(dir) {
   // Create thumbnail image element
   let thumbnail = document.createElement('div')
   thumbnail.classList.add('thumbnail')
-  thumbnail.innerHTML = `<img src="pages/${dir}/thumbnail.jpg" alt="${dir}">`
+  thumbnail.innerHTML = `<img src="pages/${dir}/screenshot.png" alt="${dir}">`
 
   // Create page title element
   let title = document.createElement('div')
@@ -161,6 +171,8 @@ function view_page(dir) {
   frame.hidden = false
   // Set the index to the current page's index
   set_index((projects.indexOf(dir) + 1).toString())
+  // Init body
+  init_document()
 }
 
 /**

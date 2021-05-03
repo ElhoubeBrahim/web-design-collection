@@ -1,0 +1,97 @@
+/* ======================= card v1 styles ======================= */
+
+.articles .article-v1 {
+
+  .info {
+    position: relative;
+    user-select: none;
+
+    .picture {
+      height: 250px;
+      border-radius: 5px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        height: 30%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        background: linear-gradient(to top, #000, transparent);
+        border-radius: 0 0 5px 5px;
+      }
+    }
+
+    .category {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #000;
+      font-weight: bold;
+      transition: .3s all ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+
+      .avatar {
+        height: 40px;
+        width: 40px;
+        justify-content: start;
+        margin-inline-end: 10px;
+        padding: 1px;
+        border: 1px #ddd solid;
+        background-color: #fff;
+        border-radius: 50%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+      }
+
+      .username {
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+
+    &:hover .category {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .article-title {
+    text-align: center;
+    padding: 20px;
+
+    a {
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
