@@ -117,7 +117,7 @@ function get_project_html(dir) {
   // Create thumbnail image element
   let thumbnail = document.createElement('div')
   thumbnail.classList.add('thumbnail')
-  thumbnail.innerHTML = `<img src="pages/${dir}/screenshot.png" alt="${dir}">`
+  thumbnail.innerHTML = `<img src="pages/${dir}/thumbnail.svg" alt="${dir}">`
 
   // Create page title element
   let title = document.createElement('div')
