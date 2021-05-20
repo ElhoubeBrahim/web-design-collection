@@ -1,5 +1,5 @@
 // List of all subfolders in pages folder
-const projects = ['blog_design']
+const projects = ['blog_design', 'test']
 
 document.body.onload = () => {
   init_document()
@@ -20,8 +20,16 @@ function init_document() {
  * Init index form and generate projects
  */
 function init() {
+  let id = new URLSearchParams(location.search).get('id') - 1
+  let dir = projects[id] || null
+
   init_index()
-  generate_projcts()
+
+  if (dir === null) {
+    generate_projcts()
+  } else {
+    view_page(dir)
+  }
 }
 
 /**
