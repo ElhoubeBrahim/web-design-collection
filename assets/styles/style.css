@@ -175,7 +175,7 @@ header.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px #ddd solid;
+  border-bottom: 1px #ddd solid;
   background-color: #fff;
   user-select: none;
   position: fixed;
@@ -186,10 +186,25 @@ header.page-header {
   z-index: 99;
 }
 
-header.page-header .brand img {
-  height: 50px;
-  width: 50px;
-  object-fit: contain;
+header.page-header .brand {
+  color: #3498db;
+  font-weight: bolder;
+}
+
+header.page-header .brand a {
+  display: flex;
+  align-items: center;
+}
+
+header.page-header .brand a span {
+  display: block;
+  width: 0;
+  overflow: hidden;
+  transition: width .3s ease-in-out;
+}
+
+header.page-header .brand a:hover span {
+  width: 65px;
 }
 
 header.page-header .go-back {
@@ -220,14 +235,13 @@ header.page-header .navigation {
 }
 
 header.page-header .navigation .index {
-  border: 1px #ddd solid;
-  padding: 2px 10px;
   border-radius: 4px;
 }
 
 header.page-header .navigation .index input {
   all: unset;
   font: inherit;
+  border: 1px #ddd solid;
   width: 30px;
   text-align: center;
 }
@@ -246,7 +260,7 @@ header.page-header .navigation .prev:hover, header.page-header .navigation .prev
 header.page-header .navigation .next:hover,
 header.page-header .navigation .next:focus,
 header.page-header .navigation .next:active {
-  transform: scale(1.5);
+  color: #3498db;
 }
 
 header.page-header .links {
@@ -256,8 +270,9 @@ header.page-header .links {
 
 header.page-header .links .link {
   margin: 0 10px;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
+  font-size: 1rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -271,7 +286,7 @@ header.page-header .links .link:last-child {
 }
 
 header.page-header .links .link:hover, header.page-header .links .link:active, header.page-header .links .link:focus {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 400px) {
@@ -326,9 +341,9 @@ main.home-page .search {
 
 main.home-page .search input {
   font: inherit;
-  padding: 7px 10px;
+  padding: 10px;
   border: 1px #ddd solid;
-  border-radius: 4px;
+  border-radius: 100px;
   outline: none;
   width: 100%;
   padding-left: 40px;
@@ -375,11 +390,12 @@ main.home-page .pages .page {
 
 main.home-page .pages .page .thumbnail {
   height: 250px;
+  overflow: hidden;
 }
 
 main.home-page .pages .page .thumbnail img {
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 101%;
   object-fit: cover;
   border-radius: 4px 4px 0 0;
 }
@@ -396,6 +412,7 @@ main.home-page .pages .page .title span {
 
 main.home-page .pages .page .title span:hover, main.home-page .pages .page .title span:focus, main.home-page .pages .page .title span:active {
   color: #3498db;
+  text-decoration: underline;
 }
 
 @media (max-width: 700px) {

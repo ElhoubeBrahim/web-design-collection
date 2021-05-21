@@ -144,7 +144,7 @@ function get_project_html(dir) {
 function get_no_content_html() {
   let el = document.createElement('div')
   el.classList.add('no-content')
-  el.innerText = 'Sorry! There is no content to show'
+  el.innerText = 'Sorry! We can\'t find what you\'re looking for'
   return el
 }
 
