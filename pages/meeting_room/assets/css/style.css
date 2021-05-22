@@ -1,0 +1,1128 @@
+/* ================== Fonts ================== */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+/* ================== Main styles ================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: #000;
+  color: #ddd;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e313e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+body {
+  background-color: #191b28;
+  color: #777;
+  font-family: "OpenSans";
+  line-height: 1.5;
+  margin-bottom: 20px;
+  /* ================== Header styles ================== */
+  /* ================== Home page styles ================== */
+}
+
+body img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+body header.header {
+  padding: 10px 0;
+  user-select: none;
+}
+
+body header.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body header.header .container .dropdown {
+  position: relative;
+}
+
+body header.header .container .dropdown.show ul.list {
+  display: block;
+}
+
+body header.header .container .dropdown .toggler {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+body header.header .container .dropdown .toggler:hover,
+body header.header .container .dropdown .toggler:active {
+  background-color: #2e313e;
+}
+
+body header.header .container .dropdown ul.list {
+  display: none;
+  position: absolute;
+  right: 10px;
+  width: max-content;
+  background-color: #1c1f2e;
+  border: 1px #555 solid;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+body header.header .container .dropdown ul.list li a {
+  display: block;
+  padding: 10px;
+  transition: .3s all ease-in-out;
+}
+
+body header.header .container .dropdown ul.list li a:hover,
+body header.header .container .dropdown ul.list li a:active {
+  background-color: #2e313e;
+}
+
+body main.app {
+  padding: 20px 0;
+  min-height: 500px;
+  height: 500px;
+}
+
+body main.app .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+body main.app .container .presentation {
+  width: 70%;
+  height: 100%;
+  /* ================== Tools styles ================== */
+}
+
+body main.app .container .presentation .content {
+  background-color: #1c1f2e;
+  border: 1px #555 solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+body main.app .container .presentation .content .image {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+body main.app .container .presentation .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+body main.app .container .presentation .content .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #ddd;
+  z-index: 1;
+}
+
+body main.app .container .presentation .content .info .user {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border: 1px #555 solid;
+  border-radius: 100px;
+  user-select: none;
+}
+
+body main.app .container .presentation .content .info .user .avatar {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline-end: 5px;
+}
+
+body main.app .container .presentation .content .info .user .avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+body main.app .container .presentation .content .info .user span {
+  font-size: .8rem;
+}
+
+body main.app .container .presentation .content .info ul.status {
+  display: flex;
+  align-items: center;
+}
+
+body main.app .container .presentation .content .info ul.status li {
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+body main.app .container .presentation .content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
+
+body main.app .container .presentation .tools {
+  background-color: #1c1f2e;
+  border: 1px #555 solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 72px;
+}
+
+body main.app .container .presentation .tools ul.list {
+  display: flex;
+  align-items: center;
+}
+
+body main.app .container .presentation .tools ul.list li {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #555 solid;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+body main.app .container .presentation .tools ul.list li:hover,
+body main.app .container .presentation .tools ul.list li:active {
+  background-color: #2e313e;
+}
+
+body main.app .container .presentation .tools ul.list li.toggle-sidebar {
+  display: none;
+}
+
+body main.app .container .presentation .tools .leave {
+  background-color: #e74c3c;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+body main.app .container .presentation .tools .leave:hover,
+body main.app .container .presentation .tools .leave:active {
+  background-color: #ea6153;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+}
+
+body main.app .container aside.sidebar {
+  width: 29%;
+  height: 100%;
+  /* ================== Message input styles ================== */
+}
+
+body main.app .container aside.sidebar .content {
+  background-color: #1c1f2e;
+  border: 1px #555 solid;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+body main.app .container aside.sidebar .content .tabulation {
+  padding: 10px;
+  height: 100%;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab-header {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  padding: 2px;
+  border-radius: 100px;
+  border: 1px #555 solid;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab-header .header {
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab-header .header.active {
+  background-color: #2e313e;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab-content {
+  height: calc(100% - 40px);
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab-content .tab {
+  display: none;
+  padding-inline-end: 5px;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab-content .tab.show {
+  display: block;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents {
+  height: 100%;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .search {
+  border-bottom: 1px #555 solid;
+  position: relative;
+  padding: 5px 10px;
+  padding-inline-end: 30px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .search input {
+  all: unset;
+  width: 100%;
+  height: 100%;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .search i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users {
+  height: calc(100% - 35px);
+  overflow-y: auto;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: .3s all ease-in-out;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user:hover,
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user:active,
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user.active {
+  background-color: #2e313e;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user .info {
+  display: flex;
+  align-items: center;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user .info .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline-end: 10px;
+  user-select: none;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user .info .avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user ul.status {
+  display: flex;
+  align-items: center;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.participents .users .user ul.status li {
+  margin: 0 5px;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat {
+  height: 100%;
+  overflow-y: auto;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box {
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: .8rem;
+  user-select: none;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box .info .user {
+  display: flex;
+  align-items: center;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box .info .user .avatar {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-inline-end: 5px;
+  user-select: none;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box .info .user .avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box .body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+body main.app .container aside.sidebar .content .tabulation .tab.chat .box .body .para {
+  color: #ddd;
+  background-color: #2e313e;
+  border: 1px #555 solid;
+  padding: 5px;
+  border-radius: 4px;
+  margin-inline-start: 35px;
+  margin-top: 5px;
+}
+
+body main.app .container aside.sidebar .message {
+  background-color: #1c1f2e;
+  border: 1px #555 solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  height: 72px;
+}
+
+body main.app .container aside.sidebar .message .input {
+  width: 100%;
+  height: 100%;
+}
+
+body main.app .container aside.sidebar .message .input input {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  color: #777;
+}
+
+body main.app .container aside.sidebar .message .send,
+body main.app .container aside.sidebar .message .emoji,
+body main.app .container aside.sidebar .message .toggle-sidebar {
+  cursor: pointer;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s all ease-in-out;
+  font-size: 1.2rem;
+}
+
+body main.app .container aside.sidebar .message .send:hover,
+body main.app .container aside.sidebar .message .send:active,
+body main.app .container aside.sidebar .message .emoji:hover,
+body main.app .container aside.sidebar .message .emoji:active,
+body main.app .container aside.sidebar .message .toggle-sidebar:hover,
+body main.app .container aside.sidebar .message .toggle-sidebar:active {
+  color: #3498db;
+}
+
+body main.app .container aside.sidebar .message .toggle-sidebar {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body main.app .container .presentation {
+    width: 64%;
+  }
+
+  body main.app .container aside.sidebar {
+    width: 35%;
+  }
+}
+
+@media (max-width: 800px) {
+  body main.app .container .presentation {
+    width: 60%;
+  }
+
+  body main.app .container aside.sidebar {
+    width: 39%;
+  }
+}
+
+@media (max-width: 700px) {
+  body main.app .container .presentation {
+    width: 100%;
+  }
+
+  body main.app .container .presentation.hide {
+    display: none;
+  }
+
+  body main.app .container .presentation .tools ul.list li.toggle-sidebar {
+    display: flex;
+  }
+
+  body main.app .container aside.sidebar {
+    display: none;
+  }
+
+  body main.app .container aside.sidebar.show {
+    display: block;
+    width: 100%;
+  }
+
+  body main.app .container aside.sidebar .message .toggle-sidebar {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  body main.app .container .presentation .tools ul.list li {
+    height: 35px;
+    width: 35px;
+  }
+
+  body main.app .container .leave {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+body.light {
+  background-color: #eee;
+  color: #444;
+  font-family: "OpenSans";
+  /* ================== Header styles ================== */
+  /* ================== Home page styles ================== */
+}
+
+body.light img {
+  filter: brightness(1) contrast(1);
+}
+
+body.light ::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 5px;
+}
+
+body.light header.header {
+  padding: 10px 0;
+  user-select: none;
+}
+
+body.light header.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.light header.header .container .dropdown {
+  position: relative;
+}
+
+body.light header.header .container .dropdown.show ul.list {
+  display: block;
+}
+
+body.light header.header .container .dropdown .toggler {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+body.light header.header .container .dropdown .toggler:hover,
+body.light header.header .container .dropdown .toggler:active {
+  background-color: #eee;
+}
+
+body.light header.header .container .dropdown ul.list {
+  display: none;
+  position: absolute;
+  right: 10px;
+  width: max-content;
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+body.light header.header .container .dropdown ul.list li a {
+  display: block;
+  padding: 10px;
+  transition: .3s all ease-in-out;
+}
+
+body.light header.header .container .dropdown ul.list li a:hover,
+body.light header.header .container .dropdown ul.list li a:active {
+  background-color: #eee;
+}
+
+body.light main.app {
+  padding: 20px 0;
+  min-height: 500px;
+  height: 500px;
+}
+
+body.light main.app .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+body.light main.app .container .presentation {
+  width: 70%;
+  height: 100%;
+  /* ================== Tools styles ================== */
+}
+
+body.light main.app .container .presentation .content {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+body.light main.app .container .presentation .content .image {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+body.light main.app .container .presentation .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+body.light main.app .container .presentation .content .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #ddd;
+  z-index: 1;
+}
+
+body.light main.app .container .presentation .content .info .user {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border: 1px #ccc solid;
+  border-radius: 100px;
+  user-select: none;
+}
+
+body.light main.app .container .presentation .content .info .user .avatar {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline-end: 5px;
+}
+
+body.light main.app .container .presentation .content .info .user .avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+body.light main.app .container .presentation .content .info .user span {
+  font-size: .8rem;
+}
+
+body.light main.app .container .presentation .content .info ul.status {
+  display: flex;
+  align-items: center;
+}
+
+body.light main.app .container .presentation .content .info ul.status li {
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+body.light main.app .container .presentation .content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
+
+body.light main.app .container .presentation .tools {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 72px;
+}
+
+body.light main.app .container .presentation .tools ul.list {
+  display: flex;
+  align-items: center;
+}
+
+body.light main.app .container .presentation .tools ul.list li {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #ccc solid;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+body.light main.app .container .presentation .tools ul.list li:hover,
+body.light main.app .container .presentation .tools ul.list li:active {
+  background-color: #eee;
+}
+
+body.light main.app .container .presentation .tools ul.list li.toggle-sidebar {
+  display: none;
+}
+
+body.light main.app .container .presentation .tools .leave {
+  background-color: #e74c3c;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+body.light main.app .container .presentation .tools .leave:hover,
+body.light main.app .container .presentation .tools .leave:active {
+  background-color: #ea6153;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+}
+
+body.light main.app .container aside.sidebar {
+  width: 29%;
+  height: 100%;
+  /* ================== Message input styles ================== */
+}
+
+body.light main.app .container aside.sidebar .content {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation {
+  padding: 10px;
+  height: 100%;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab-header {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  padding: 2px;
+  border-radius: 100px;
+  border: 1px #ccc solid;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab-header .header {
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab-header .header.active {
+  background-color: #eee;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab-content {
+  height: calc(100% - 40px);
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab-content .tab {
+  display: none;
+  padding-inline-end: 5px;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab-content .tab.show {
+  display: block;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents {
+  height: 100%;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .search {
+  border-bottom: 1px #ccc solid;
+  position: relative;
+  padding: 5px 10px;
+  padding-inline-end: 30px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .search input {
+  all: unset;
+  width: 100%;
+  height: 100%;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .search i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users {
+  height: calc(100% - 35px);
+  overflow-y: auto;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: .3s all ease-in-out;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user:hover,
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user:active,
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user.active {
+  background-color: #eee;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user .info {
+  display: flex;
+  align-items: center;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user .info .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline-end: 10px;
+  user-select: none;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user .info .avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user ul.status {
+  display: flex;
+  align-items: center;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.participents .users .user ul.status li {
+  margin: 0 5px;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat {
+  height: 100%;
+  overflow-y: auto;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box {
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: .8rem;
+  user-select: none;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box .info .user {
+  display: flex;
+  align-items: center;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box .info .user .avatar {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-inline-end: 5px;
+  user-select: none;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box .info .user .avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box .body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+body.light main.app .container aside.sidebar .content .tabulation .tab.chat .box .body .para {
+  color: #555;
+  background-color: #eee;
+  border: 1px #ccc solid;
+  padding: 5px;
+  border-radius: 4px;
+  margin-inline-start: 35px;
+  margin-top: 5px;
+}
+
+body.light main.app .container aside.sidebar .message {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  height: 72px;
+}
+
+body.light main.app .container aside.sidebar .message .input {
+  width: 100%;
+  height: 100%;
+}
+
+body.light main.app .container aside.sidebar .message .input input {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  color: #444;
+}
+
+body.light main.app .container aside.sidebar .message .send,
+body.light main.app .container aside.sidebar .message .emoji,
+body.light main.app .container aside.sidebar .message .toggle-sidebar {
+  cursor: pointer;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s all ease-in-out;
+  font-size: 1.2rem;
+}
+
+body.light main.app .container aside.sidebar .message .send:hover,
+body.light main.app .container aside.sidebar .message .send:active,
+body.light main.app .container aside.sidebar .message .emoji:hover,
+body.light main.app .container aside.sidebar .message .emoji:active,
+body.light main.app .container aside.sidebar .message .toggle-sidebar:hover,
+body.light main.app .container aside.sidebar .message .toggle-sidebar:active {
+  color: #3498db;
+}
+
+body.light main.app .container aside.sidebar .message .toggle-sidebar {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body.light main.app .container .presentation {
+    width: 64%;
+  }
+
+  body.light main.app .container aside.sidebar {
+    width: 35%;
+  }
+}
+
+@media (max-width: 800px) {
+  body.light main.app .container .presentation {
+    width: 60%;
+  }
+
+  body.light main.app .container aside.sidebar {
+    width: 39%;
+  }
+}
+
+@media (max-width: 700px) {
+  body.light main.app .container .presentation {
+    width: 100%;
+  }
+
+  body.light main.app .container .presentation.hide {
+    display: none;
+  }
+
+  body.light main.app .container .presentation .tools ul.list li.toggle-sidebar {
+    display: flex;
+  }
+
+  body.light main.app .container aside.sidebar {
+    display: none;
+  }
+
+  body.light main.app .container aside.sidebar.show {
+    display: block;
+    width: 100%;
+  }
+
+  body.light main.app .container aside.sidebar .message .toggle-sidebar {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  body.light main.app .container .presentation .tools ul.list li {
+    height: 35px;
+    width: 35px;
+  }
+
+  body.light main.app .container .leave {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

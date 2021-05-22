@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+
+  <title>Meeting room</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/images/logo.svg" alt="Meeting app" height="40" width="40">
+      </div>
+      <div class="dropdown" id="header-dropdown">
+        <div class="toggler" onclick="toggle_dropdown('header-dropdown')">
+          <i class="ri-more-2-fill"></i>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">Report a bug</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+          <li>
+            <a href="#">Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="app">
+    <div class="container">
+      <div class="presentation">
+        <div class="content">
+          <div class="info">
+            <div class="user">
+              <div class="avatar">
+                <img src="assets/images/users/user-2.jpg" alt="">
+              </div>
+              <span>Osama Mohamed</span>
+            </div>
+            <ul class="status">
+              <li><i class="ri-mic-line"></i></li>
+              <li><i class="ri-vidicon-line"></i></li>
+            </ul>
+          </div>
+          <div class="image">
+            <img src="assets/images/views/view-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="tools">
+          <ul class="list">
+            <li onclick="toggle_mic(this)">
+              <i class="ri-mic-line"></i>
+            </li>
+            <li onclick="toggle_camera(this)">
+              <i class="ri-vidicon-line"></i>
+            </li>
+            <li onclick="mute(this)">
+              <i class="ri-volume-up-line"></i>
+            </li>
+          </ul>
+          <div class="leave">
+            <i class="ri-shut-down-line"></i>
+          </div>
+          <ul class="list">
+            <li onclick="fullscreen()">
+              <i class="ri-fullscreen-line"></i>
+            </li>
+            <li onclick="toggle_mode()">
+              <i class="ri-moon-line mode"></i>
+            </li>
+            <li class="toggle-sidebar" onclick="toggle_sidebar()">
+              <i class="ri-menu-line"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="content">
+          <div class="tabulation">
+            <div class="tab-header">
+              <div class="header active" onclick="open_tab(this, 'participents')">Users <span>(20)</span></div>
+              <div class="header" onclick="open_tab(this, 'chat'); scroll_down('chat')">
+                Chat <span>(50)</span></div>
+            </div>
+            <div class="tab-content">
+              <div class="tab show participents" id="participents">
+                <div class="search">
+                  <input type="text" placeholder="Search ...">
+                  <i class="ri-search-line"></i>
+                </div>
+                <div class="users"></div>
+              </div>
+              <div class="tab chat" id="chat"></div>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <div class="toggle-sidebar" onclick="toggle_sidebar()">
+            <i class="ri-menu-line"></i>
+          </div>
+          <div class="send" onclick="send_message()">
+            <i class="ri-send-plane-2-line"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Type to write a message ..." onkeydown="send_message(event)">
+          </div>
+          <div class="emoji">
+            <i class="ri-user-smile-line"></i>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="database/users.js"></script>
+  <script src="database/chat.js"></script>
+
+  <script src="assets/js/dark-mode.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/tabulation.js"></script>
+  <script src="assets/js/user.js"></script>
+  <script src="assets/js/chat.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <iframe onload="generate_users()" hidden frameborder="0"></iframe>
+  <iframe onload="generate_chat()" hidden frameborder="0"></iframe>
+
+</body>
+
+</html>
