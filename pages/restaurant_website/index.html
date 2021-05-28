@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+
+  <title>OUR RESTAU | HOME</title>
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="loading">
+      <i class="ri-loader-line"></i>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="top-side">
+      <ul class="contact">
+        <li>
+          <i class="ri-map-pin-line"></i>
+          <span>Address 1, Home 20, New York</span>
+        </li>
+        <li>
+          <i class="ri-phone-line"></i>
+          <span>+212 646 676 897</span>
+        </li>
+        <li>
+          <i class="ri-mail-line"></i>
+          <span>hello@provider.com</span>
+        </li>
+      </ul>
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-youtube-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-pinterest-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="brand">
+        <a href="index.html">OUR RESTAU</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="team.html">Team</a>
+          </li>
+        </ul>
+        <a href="#" class="cta">Book Table</a>
+      </nav>
+      <div class="dropdown">
+        <div class="toggler" onclick="toggle(this)">
+          <i class="ri-menu-line"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="team.html">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-page">
+
+    <div class="intro">
+      <div class="slider">
+        <img src="assets/images/intro.jpg" alt=" ">
+      </div>
+      <div class="overlay"></div>
+      <div class="welcome">
+        <h1>WELCOME TO OUR RESTAU</h1>
+        <a href="#" class="cta">Book Table</a>
+      </div>
+    </div>
+
+    <div class="section about">
+      <h2 class="title"><span>ABOUT US</span></h2>
+      <div class="content">
+        <div class="image">
+          <img src="assets/images/about.jpg" alt="About">
+        </div>
+        <div class="para">
+          <p>
+            This is a sample website for a restaurant, it will be added to my <a
+              href="https://elhoubebrahim.github.io/web-design-collection/" target="_blank">web design collection</a>
+            project which is a collection of pages I
+            used to design, in order to show you some of my work and to get a little bit inspired.
+          </p>
+          <p>
+            This project is built using HTML, CSS and the content is rendered using JS
+          </p>
+          <p>
+            I hope that you enjoy the project. Don't forget to <a href="mailto:brahim.elhoube@gmail.com"
+              target="_blank">contact me</a>
+            if you have a question or advice for me. I will appreciate it 😇
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section dark products">
+      <h2 class="title"><span>OUR PRODUCTS</span></h2>
+      <div class="container">
+        <div class="product">
+          <div class="picture">
+            <div class="order"><a href="#">order</a></div>
+            <img src="assets/images/products/product-1.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="rate">
+              <i class="ri-star-fill"></i>
+              <span>4.5</span>
+            </div>
+            <div class="price">
+              <i>$</i>
+              <span>50</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="picture">
+            <div class="order"><a href="#">order</a></div>
+            <img src="assets/images/products/product-2.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="rate">
+              <i class="ri-star-fill"></i>
+              <span>4.7</span>
+            </div>
+            <div class="price">
+              <i>$</i>
+              <span>100</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="picture">
+            <div class="order"><a href="#">order</a></div>
+            <img src="assets/images/products/product-3.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="rate">
+              <i class="ri-star-fill"></i>
+              <span>4.1</span>
+            </div>
+            <div class="price">
+              <i>$</i>
+              <span>20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <a href="products.html">View more</a>
+      </div>
+    </div>
+
+    <div class="section testimonials">
+      <h2 class="title"><span>Testimonials</span></h2>
+      <div class="container">
+        <div class="prev" onclick="prev()">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div class="content"></div>
+        <div class="next" onclick="next()">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer">
+      <div class="brand">OUR RESTAU</div>
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-youtube-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-pinterest-line"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        |
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </ul>
+    </div>
+    <div class="bottom-side">
+      <div class="by">
+        Designed by
+        <a href="http://elwork.me" target="_blank">Brahim Elhoube</a>
+      </div>
+      <div class="copy">
+        &copy;2021
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-to-top">
+    <i class="ri-arrow-up-s-line"></i>
+  </div>
+
+  <script src="database/testimonials.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    generate_testimonials()
+  </script>
+  <script src="assets/js/slide.js"></script>
+</body>
+
+</html>

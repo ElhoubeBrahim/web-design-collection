@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+
+  <title>OUR RESTAU | TEAM</title>
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="loading">
+      <i class="ri-loader-line"></i>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="top-side">
+      <ul class="contact">
+        <li>
+          <i class="ri-map-pin-line"></i>
+          <span>Address 1, Home 20, New York</span>
+        </li>
+        <li>
+          <i class="ri-phone-line"></i>
+          <span>+212 646 676 897</span>
+        </li>
+        <li>
+          <i class="ri-mail-line"></i>
+          <span>hello@provider.com</span>
+        </li>
+      </ul>
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-youtube-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-pinterest-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="brand">
+        <a href="index.html">OUR RESTAU</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="team.html">Team</a>
+          </li>
+        </ul>
+        <a href="#" class="cta">Book Table</a>
+      </nav>
+      <div class="dropdown">
+        <div class="toggler" onclick="toggle(this)">
+          <i class="ri-menu-line"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="team.html">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="team-page">
+
+    <h1 class="title"><span>OUR TEAM</span></h1>
+
+    <div class="container"></div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer">
+      <div class="brand">OUR RESTAU</div>
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-youtube-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-pinterest-line"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        |
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </ul>
+    </div>
+    <div class="bottom-side">
+      <div class="by">
+        Designed by
+        <a href="http://elwork.me" target="_blank">Brahim Elhoube</a>
+      </div>
+      <div class="copy">
+        &copy;2021
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-to-top">
+    <i class="ri-arrow-up-s-line"></i>
+  </div>
+
+  <script src="database/team.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    generate_members()
+  </script>
+</body>
+
+</html>

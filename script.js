@@ -1,5 +1,5 @@
 // List of all subfolders in pages folder
-const projects = ['meeting_room', 'blog_design']
+const projects = ['meeting_room', 'blog_design', 'restaurant_website']
 
 document.body.onload = () => {
   init_document()
