@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   color: #222;
   font-family: "Montserrat";
   font-size: 1rem;
@@ -125,7 +125,7 @@ header.page-header .header {
   align-items: center;
   padding: 10px 15px;
   background-color: #592c12;
-  color: #f2d1b3;
+  color: #fafafa;
   user-select: none;
 }
 
@@ -154,7 +154,7 @@ header.page-header .header nav.nav ul li a::after, header.page-header .header na
   margin: 0 auto;
   height: 2px;
   border-radius: 100px;
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   transition: .3s all ease-in-out;
 }
 
@@ -165,7 +165,7 @@ header.page-header .header nav.nav ul li a:hover::after, header.page-header .hea
 header.page-header .header nav.nav .cta {
   margin-inline-start: 20px;
   padding: 10px 20px;
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   color: #222;
   border: 1px transparent solid;
   border-radius: 4px;
@@ -174,8 +174,8 @@ header.page-header .header nav.nav .cta {
 
 header.page-header .header nav.nav .cta:hover {
   background-color: #592c12;
-  border-color: #f2d1b3;
-  color: #f2d1b3;
+  border-color: #fafafa;
+  color: #fafafa;
 }
 
 header.page-header .header .dropdown {
@@ -213,7 +213,7 @@ header.page-header .header .dropdown ul {
   right: 0;
   z-index: 1;
   background-color: #592c12;
-  border: 1px #f2d1b3 solid;
+  border: 1px #fafafa solid;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -259,7 +259,7 @@ footer.page-footer .footer {
   justify-content: center;
   align-items: center;
   background-color: #592c12;
-  color: #f2d1b3;
+  color: #fafafa;
   padding: 50px 20px;
 }
 
@@ -288,12 +288,12 @@ footer.page-footer .footer ul.social-media li a {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 1px #f2d1b3 solid;
+  border: 1px #fafafa solid;
   transition: .3s all ease-in-out;
 }
 
 footer.page-footer .footer ul.social-media li a:hover {
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   color: #592c12;
 }
 
@@ -320,7 +320,7 @@ footer.page-footer .footer ul.links ul li a::after {
   width: 0;
   height: 2px;
   border-radius: 100px;
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   transition: .3s all ease-in-out;
 }
 
@@ -335,7 +335,7 @@ footer.page-footer .bottom-side {
   flex-wrap: wrap;
   padding: 10px 20px;
   background-color: #451b03;
-  color: #f2d1b3;
+  color: #fafafa;
 }
 
 footer.page-footer .bottom-side a {
@@ -377,11 +377,11 @@ main.home-page .section {
 }
 
 main.home-page .section.dark .title {
-  color: #f2d1b3;
+  color: #fafafa;
 }
 
 main.home-page .section.dark .title span {
-  border-color: #f2d1b3;
+  border-color: #fafafa;
 }
 
 main.home-page .section.dark .more {
@@ -389,7 +389,7 @@ main.home-page .section.dark .more {
 }
 
 main.home-page .section.dark .more a {
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   color: #222;
 }
 
@@ -509,7 +509,7 @@ main.home-page .about .content .para p {
 
 main.home-page .about .content .para p a {
   text-decoration: underline;
-  color: #f2d1b3;
+  color: #fafafa;
 }
 
 @media (max-width: 900px) {
@@ -544,7 +544,7 @@ main.home-page .products .container .product {
   margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 4px;
-  border: 1px #f2d1b3 solid;
+  border: 1px #fafafa solid;
 }
 
 main.home-page .products .container .product .picture {
@@ -568,18 +568,18 @@ main.home-page .products .container .product .picture .order {
   display: none;
   justify-content: center;
   align-items: center;
-  color: #f2d1b3;
+  color: #fafafa;
 }
 
 main.home-page .products .container .product .picture .order a {
   padding: 10px 30px;
-  border: 1px #f2d1b3 solid;
+  border: 1px #fafafa solid;
   border-radius: 4px;
   transition: .3s all ease-in-out;
 }
 
 main.home-page .products .container .product .picture .order a:hover {
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   color: #592c12;
 }
 
@@ -596,7 +596,7 @@ main.home-page .products .container .product .picture:hover img {
 main.home-page .products .container .product .info {
   display: flex;
   justify-content: space-between;
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   padding: 10px;
 }
 
@@ -763,7 +763,7 @@ main.products-page .container .product {
   margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 4px;
-  border: 1px #f2d1b3 solid;
+  border: 1px #fafafa solid;
 }
 
 main.products-page .container .product .picture {
@@ -787,18 +787,18 @@ main.products-page .container .product .picture .order {
   display: none;
   justify-content: center;
   align-items: center;
-  color: #f2d1b3;
+  color: #fafafa;
 }
 
 main.products-page .container .product .picture .order a {
   padding: 10px 30px;
-  border: 1px #f2d1b3 solid;
+  border: 1px #fafafa solid;
   border-radius: 4px;
   transition: .3s all ease-in-out;
 }
 
 main.products-page .container .product .picture .order a:hover {
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   color: #592c12;
 }
 
@@ -815,7 +815,7 @@ main.products-page .container .product .picture:hover img {
 main.products-page .container .product .info {
   display: flex;
   justify-content: space-between;
-  background-color: #f2d1b3;
+  background-color: #fafafa;
   padding: 10px;
 }
 
@@ -880,8 +880,9 @@ main.team-page .container .member {
   padding: 20px;
   margin: 0 1.5%;
   margin-bottom: 2rem;
-  background-color: #592c12;
-  color: #f2d1b3;
+  background-color: #fff;
+  border: 1px #ddd solid;
+  color: #592c12;
   border-radius: 4px;
 }
 
@@ -913,7 +914,7 @@ main.team-page .container .member .name {
   main.team-page .container .member {
     width: 100%;
     background-color: #592c12;
-    color: #f2d1b3;
+    color: #fafafa;
   }
 }
 /*# sourceMappingURL=style.css.map */
